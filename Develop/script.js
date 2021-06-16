@@ -1,2 +1,5 @@
+//moment for display current date and time
 const m = moment();
-console.log(m.toString());
+$('#currentDay').text(m.format("dddd, MMM Do YYYY, h:mm:ss a"));
+
+
