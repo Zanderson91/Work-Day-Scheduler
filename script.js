@@ -17,3 +17,12 @@ $(".saveBtn").on("click", function() {
 
 // Local Storage
 localStorage.setItem(time, text);
+
+
+//need loop for time blocks
+
+
+//need indication for classes added in CSS
+
+
+//need value from local storage
