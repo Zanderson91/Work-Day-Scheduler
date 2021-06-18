@@ -9,11 +9,11 @@ function getTime () {
 }
 
 
-/*Event listener for Save Button
+//Event listener for Save Button
 $(".saveBtn").on("click", function() {
 
 }
-*/
+
 
 // Local Storage
 localStorage.setItem(time, text);
