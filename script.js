@@ -12,10 +12,32 @@ $('#currentDay').text(m.format("dddd, MMM Do YYYY, h:mm:ss a"));
 
 //need conditionals for time blocks
 if (timeBlock < currentTime) {
-    $(this).removeClass("future")
-    $(this).removeClass("present")
-    $(this).removeClass("past")
+    $(this).addClass("past");
+    $(this).removeClass("present");
+    $(this).removeClass("future");
+}else (timeBlock === currentTime) { 
+    $(this).addClass("present");
+    $(this).removeClass("past");
+    $(this).removeClass("future");
+}else { $(this).addClass("future");
+$(this).removeClass("present");
+$(this).removeClass("past");
 }
+
+
+
+
+
+
+
+
+//function created to return a string 
+$(".time-block").each(function () {
+    var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
+
+
+
+
 
 
 //need indication for classes added in CSS
@@ -32,7 +54,5 @@ let time = $(this).parent().attr("id");
 
 // Local Storage
 localStorage.setItem(time, notes);
-})
-
-})
+}
 
