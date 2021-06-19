@@ -10,9 +10,11 @@ $('#currentDay').text(m.format("dddd, MMM Do YYYY, h:mm:ss a"));
 
 
 
-//need loop for time blocks
-if (timeBlock < currentTime {
+//need conditionals for time blocks
+if (timeBlock < currentTime) {
     $(this).removeClass("future")
+    $(this).removeClass("present")
+    $(this).removeClass("past")
 }
 
 
