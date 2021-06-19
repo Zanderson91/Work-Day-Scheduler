@@ -13,8 +13,7 @@ function getTime () {
 
 
 /*
-// Local Storage
-localStorage.setItem(time, notes);
+
 
 
 //need loop for time blocks
@@ -29,4 +28,7 @@ localStorage.setItem(time, notes);
 //Event listener for Save Button
 $(".saveBtn").on("click", function() {
 let notes = $(this).siblings(".description").val();
+let time = $(this).parent().attr("id");
 
+// Local Storage
+localStorage.setItem(time, notes);
