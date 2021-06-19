@@ -5,17 +5,16 @@ $('#currentDay').text(m.format("dddd, MMM Do YYYY, h:mm:ss a"));
 function getTime () {
     let currentTime = moment().hour();
     $(".time-block").each(function() {
-        let timeBlock = parseInt($this).attr("id").split("hour")[1]);
-    }
+        let timeBlock = parseInt(($this).attr("id").split("hour")[1]);
 
+})
 }
 
 
 
-
-
+/*
 // Local Storage
-localStorage.setItem(time, text);
+localStorage.setItem(time, notes);
 
 
 //need loop for time blocks
@@ -25,8 +24,9 @@ localStorage.setItem(time, text);
 
 
 //need value from local storage
+})*/
 
 //Event listener for Save Button
 $(".saveBtn").on("click", function() {
+let notes = $(this).siblings(".description").val();
 
-}
