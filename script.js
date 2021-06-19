@@ -3,9 +3,8 @@ const m = moment();
 $('#currentDay').text(m.format("dddd, MMM Do YYYY, h:mm:ss a"));
 
 
-
-
-
+function timeBlockEvent() {
+    let currentTime = m;
 
 
 
@@ -15,7 +14,7 @@ if (timeBlock < currentTime) {
     $(this).addClass("past");
     $(this).removeClass("present");
     $(this).removeClass("future");
-}else (timeBlock === currentTime) { 
+}else if (timeBlock === currentTime) { 
     $(this).addClass("present");
     $(this).removeClass("past");
     $(this).removeClass("future");
@@ -32,9 +31,6 @@ $(this).removeClass("past");
 
 
 //function created to return a string 
-$(".time-block").each(function () {
-    var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
-
 
 
 
@@ -54,5 +50,5 @@ let time = $(this).parent().attr("id");
 
 // Local Storage
 localStorage.setItem(time, notes);
+})})})
 }
-
