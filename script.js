@@ -3,10 +3,6 @@ const m = moment();
 $('#currentDay').text(m.format("dddd, MMM Do YYYY, h:mm:ss a"));
 
 
-
-
-$(document).ready(function() {
-
     // Event Listener for Save Button
 $(".saveBtn").on("click", function() {
 let notes = $(this).siblings(".description").val();
@@ -18,7 +14,7 @@ localStorage.setItem(time, notes);
 
     // loop over div time blocks
 $(".time-block").each(function () {
-    let timeBlock = parseInt($(this).attr("id").split("hour")[1]);
+    let timeBlock = $(this).attr("id").split("hour")[1];
     let currentTime = moment().hour();
 
 //Conditional statements for CSS time blocks
@@ -37,7 +33,7 @@ if (timeBlock < currentTime) {
               
 })
 })
-})
+
 
 $("#hour8 .description").val(localStorage.getItem("hour8"));
 $("#hour9 .description").val(localStorage.getItem("hour9"));
