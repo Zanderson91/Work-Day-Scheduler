@@ -3,21 +3,11 @@ const m = moment();
 $('#currentDay').text(m.format("dddd, MMM Do YYYY, h:mm:ss a"));
 
 
-//need conditionals for time blocks
-
-
-
-
-
-
-//function created to return a string 
-
-
-
 
 
 $(document).ready(function() {
-//Event listener for Save Button
+
+    // Event Listener for Save Button
 $(".saveBtn").on("click", function() {
 let notes = $(this).siblings(".description").val();
 let time = $(this).parent().attr("id");
@@ -31,6 +21,7 @@ $(".time-block").each(function () {
     let timeBlock = parseInt($(this).attr("id").split("hour")[1]);
     let currentTime = moment().hour();
 
+//Conditional statements for CSS time blocks
 if (timeBlock < currentTime) {
     $(this).addClass("past");
     $(this).removeClass("present");
@@ -42,9 +33,8 @@ if (timeBlock < currentTime) {
     }else { $(this).addClass("future");
     $(this).removeClass("present");
     $(this).removeClass("past");
-}
+    }
               
-
 })
 })
 })
