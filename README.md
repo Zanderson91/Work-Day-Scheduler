@@ -4,7 +4,7 @@ A day scheduler has been created to give the user the ability to create a Work D
 
 https://zanderson91.github.io/Work-Day-Scheduler/
 
-C:\Users\zacka\projects\Work-Day-Scheduler\assets\05-third-party-apis-homework-demo.gif
+
 
 
 ## User Story
