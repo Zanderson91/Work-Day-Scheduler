@@ -20,13 +20,13 @@ let notes = $(this).siblings(".description").val();
 let time = $(this).parent().attr("id");
 localStorage.setItem(time, notes);
 
-    // loop over div time blocks
+    // loop for time-block divs
 $(".time-block").each(function () {
     let timeBlock = $(this).attr("id").split("hour")[1];
     let currentTime = moment().hour();
 
 //Conditional statements for CSS time blocks
-if (time < currentTime) {
+if (timeBlock < currentTime) {
     $(this).addClass("past");
     $(this).removeClass("present");
     $(this).removeClass("future");
