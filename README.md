@@ -1,16 +1,15 @@
 # Work-Day-Scheduler
 
-# 05 Third-Party APIs: Work Day Scheduler
+A day scheduler has been created to give the user the ability to create a Work Day Schedule and save the activities/notes to their local storage. The scheduler also gives the user the ability to see tasks by time of day and labels the event by color.
 
-## Your Task
+https://zanderson91.github.io/Work-Day-Scheduler/
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+C:\Users\zacka\projects\Work-Day-Scheduler\assets\05-third-party-apis-homework-demo.gif
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
 
 ## User Story
 
-```md
+```
 AS AN employee with a busy schedule
 I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
