@@ -4,6 +4,7 @@ A day scheduler has been created to give the user the ability to create a Work D
 
 https://zanderson91.github.io/Work-Day-Scheduler/
 
+![image](https://user-images.githubusercontent.com/81836426/126519523-47b27db0-aba4-4af9-907b-3ea1fbe18c71.png)
 
 
 
